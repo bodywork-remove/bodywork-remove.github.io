@@ -913,6 +913,10 @@ footer {
     animation-delay: .36s;
 }
 
+p.copy {
+    font-size: 12px;
+}
+
 @keyframes enter {
     to {
         opacity: 1;
