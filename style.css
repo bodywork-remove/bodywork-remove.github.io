@@ -343,6 +343,7 @@ h1 {
 #hero .copy p.lead {
     font-size: 24px;
     color: var(--brand-2);
+    font-weight: bold;
 }
 
 .cta {
