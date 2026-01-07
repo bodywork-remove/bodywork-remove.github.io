@@ -782,11 +782,14 @@ h1 {
 /*footer*/
 footer {
     background: var(--brand-1);
-    color: #ffffff;
     text-align: center;
     padding: 24px 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
+}
+
+p.copy {
+    color: #ffffff;
 }
 
 /* Responsive */
@@ -892,6 +895,10 @@ footer {
         height: auto;
         padding: 100px 20px 80px 20px;
     }
+
+    p.copy {
+        font-size: 12px;
+    }
 }
 
 /* Simple fade-in animation */
@@ -911,10 +918,6 @@ footer {
 
 .fade-in.delay-3 {
     animation-delay: .36s;
-}
-
-p.copy {
-    font-size: 12px;
 }
 
 @keyframes enter {
