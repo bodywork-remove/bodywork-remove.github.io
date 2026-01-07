@@ -815,6 +815,8 @@ p.copy {
         height: auto;
         background-size: cover;
         background-position: left top;
+        margin: 0;
+        border-radius: 0;
     }
 
     .hero {
@@ -829,6 +831,15 @@ p.copy {
 
     #hero .copy p.lead {
         font-size: 18px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    figcaption {
+        padding: 10px 0;
+        text-align: center;
     }
 
     .services {
