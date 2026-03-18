@@ -12,6 +12,8 @@
   <meta property="og:url" content="https://bodywork-remove.github.io/">
   <meta property="og:image" content="https://bodywork-remove.github.io/images/remove.png">
   <title>Re:move｜整体×パーソナルピラティスで踊りやすい身体へ（渋谷・恵比寿・横浜）</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -35,20 +37,39 @@
   </header>
 
   <main>
+    <button type="button" class="swiper-button-prev"></button>
+    <button type="button" class="swiper-button-next"></button>
+    </div>
     <section id="hero">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div><img src="images/swiper1.jpg" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <div><img src="images/swiper2.jpg" alt=""></div>
+          </div>
+          <div class="swiper-slide">
+            <div><img src="images/swiper3.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
       <div class="hero">
+
         <div class="copy">
           <h1>踊りやすい身体をつくる<br>整体×パーソナルピラティス</h1>
           <p class="lead">いくつからでも自分史上最高の体へ</p>
           <p>
-            大人の姿勢・動作改善、パフォーマンスアップ専門<br>
+            大人の姿勢・動作改善、パフォーマンスアップ特化<br>
             多角的なアプローチで動きやすい体を取り戻します</p>
           <div class="btn arrow">
             <a href="#contact" class="cta"><i class="fas fa-play"></i> 予約する</a>
           </div>
         </div>
-      </div>
     </section>
+
+
+
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -68,11 +89,11 @@
             本気で身体を変えたい人におすすめです。
           </p>
           <p class="notes">※ 設備の関係でマシンピラティスは女性専用となっております。<br>
-            男性の方の場合はマシンピラティスなしのスタジオのご案内となります。</p>
+            男性の方の場合は施術とマットピラティスでのご案内となります。</p>
         </div>
 
         <figure class="about-visual">
-          <img src="images/logo.jpg" alt="Re:move ロゴ">
+          <img src="images/about.jpg" alt="Re:move ロゴ">
           <figcaption>痛みや不調を取り除くremoveと、<br class="sp">re(再び)move(動く)で <br class="pc">"Re:move" です。</figcaption>
         </figure>
       </div>
@@ -202,7 +223,7 @@
       </ul>
       <div class="pricing-type">
         <p>Re:moveの考え方と施術を最も体感できる基本メニューです。</p>
-        <div class="pricing-grid grid2-1">
+        <div class="pricing-grid grid3">
           <div class="price-card recommended">
             <div class="badge-90">
               <i class="fas fa-crown"></i> 基本メニュー
@@ -216,21 +237,27 @@
               <span>（初回 ¥8,000）</span>
             </div>
             <p>
-              ダンスのために、<br class="sp">体そのものを変えていきたい大人の方へ。<br>
+              ダンスのために、<br class="sp">体そのものを<br class="pc">変えていきたい大人の方へ。<br>
               お体の悩みに応じて<br class="sp">各種施術とピラティスを<br class="sp">適切に組み合わせて提供します。<br>
-              施術で整えた体を、<br class="sp">
-              実際のダンスの動きにつなげていく<br class="sp">
-              Re:moveの基本となる組み合わせです。
+              施術で整えた体を、<br>実際のダンスの動きにつなげていく<br>Re:moveの基本となる組み合わせです。
             </p>
             <a href="#contact" class="btn-primary reserve">
               <i class="fas fa-star"></i> 予約する
             </a>
           </div>
-
           <div class="price-card">
             <h4>おまかせ　60分</h4>
             <div class="price-amount">¥8,000</div>
             <p>時間やご予算の都合がある中で、<br>体を変えたい方へ。</p>
+            <a href="#contact" class="btn-primary reserve">予約する</a>
+          </div>
+          <div class="price-card">
+            <h4>おまかせ　120分</h4>
+            <div class="price-amount">¥16,000</div>
+            <p>地方や海外在住など、<br>定期的に通うことが難しい方へ。<br>
+              セルフワークを多めにお伝えします。<br>
+              後日のZOOMサポート1回付きです。
+            </p>
             <a href="#contact" class="btn-primary reserve">予約する</a>
           </div>
         </div>
@@ -427,9 +454,9 @@
           <p>大人になってからダンスを始め、体の使い方や動きに悩んできた経験から、「体を変えることで踊りは変えられる」という考えを大切にしています。<br>
             運動が苦手な方や、頑張って練習しているのに思うように上達しない方の気持ちが、私自身の経験からよく分かります。</p>
           <p>整体師、運動指導者と聞くと、子供の頃からスポーツをしていたり、運動神経が良い人のイメージを持つ方が多いのではないでしょうか。<br>
-            私は正反対で、幼少期からずっと体が硬く猫背で運動音痴で、体育の授業が大嫌いでした。<br>
+            私は正反対で、幼少期からずっと体が硬く猫背で酷い運動音痴で、体育の授業が大嫌いでした。<br>
             中学ではあまりの体の硬さに体育の先生から心配され、ボールはまともに投げられず、体力テストのハンドボール投げが中高6年間判定外という運動音痴のまま卒業。<br>
-            大学時代には姿勢の悪さから首がストレートネックを通り越して逆カーブ(頚椎後弯)になり、吐き気や頭痛を伴う重度の肩凝りに悩まされました。
+            大学時代には姿勢の悪さから、吐き気や頭痛を伴う重度の肩凝りに悩まされました。
           </p>
           <p>
             大人になってからダンスを始めるも全く上手くならず、腹筋がバキバキのシックスパックでありながら体幹が弱いという残念な体を作ってしまいました。<br>
@@ -438,7 +465,7 @@
             ダンス以前に基本的な体の使い方すら全く知らなかった私には険しい道のりでしたが、その経験から得た幅広い知識で同じように体の悩みを抱えている方をサポートしていきたいと思っています。
           </p>
           <p>まだまだ私自身も体に悩みがあり、改善のために学び続けているので、これからも提供するメニューはどんどんブラッシュアップしていきます。<br>
-            今後は脳や神経へのアプローチを強化していく予定です。<br>
+            現在はDCD（発達性協調運動障害）が原因で体が上手く使えない方のサポートを強化するべく学んでいます。<br>
             姿勢や体の使いづらさで悩んでいる方、ダンスやスポーツのパフォーマンスを上げたい方はぜひお越しください。</p>
         </div>
       </div>
@@ -449,9 +476,7 @@
       <h2>Access<br><span>施術場所について</span></h2>
       <p class="center-text">Re:moveでは、渋谷・恵比寿・横浜エリアを中心に、<br class="pc">
         整体とピラティスを行うために必要な条件を満たした<br class="pc">
-        レンタルサロン／スタジオを選定してセッションを行っています。<br>
-        十分なスペース、ピラティスマットやマシン・プロップスが使用できる環境、<br class="pc">
-        施術に集中できる落ち着いた空間を重視しています。</p>
+        レンタルサロン／スタジオを選定してセッションを行っています。</p>
       <div class="access-grid">
         <div class="card">
           <h3><i class="fas fa-map-marker-alt"></i> 渋谷</h3>
@@ -475,15 +500,15 @@
         <div class="card">
           <h3><i class="fas fa-map-marker-alt"></i> 横浜</h3>
           <ul>
-            <li>神奈川県横浜市西区高島2丁目</li>
             <li>神奈川県横浜市西区楠町11丁目</li>
+            <li>神奈川県横浜市神奈川区神奈川2丁目</li>
           </ul>
-          <p>横浜駅徒歩2〜5分</p>
+          <p>横浜駅徒歩5分、東神奈川駅徒歩5分</p>
         </div>
       </div>
       <p class="notes">
         ※ 詳細な住所はご予約確定後にご案内いたします。<br>
-        ※ 2回目以降はご希望や通いやすさに応じて、<br class="sp">中目黒・二子新地・原宿・雪が谷大塚・北参道などの<br class="sp">スタジオをご相談のうえ使用することも可能です。
+        ※ 2回目以降はご希望や通いやすさに応じて、<br class="sp">中目黒・目黒・原宿・二子新地・雪が谷大塚・北参道などの<br class="sp">スタジオをご相談のうえ使用することも可能です。
       </p>
     </section>
 
