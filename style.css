@@ -26,12 +26,20 @@ body {
         "Hiragino Sans",
         Meiryo,
         sans-serif;
-    background: linear-gradient(180deg, #f8fbf9 0%, #f3f7f5 100%);
+    /* background: linear-gradient(180deg, #f8fbf9 0%, #f3f7f5 100%); */
     color: #222
 }
 
 section {
-    padding: 90px 20px 0;
+    padding: 45px 20px;
+}
+
+main section:nth-of-type(odd) {
+    background: #f8fbf9;
+}
+
+main section:nth-of-type(even) {
+    background: #E6F0EA;
 }
 
 body.modal_open {
@@ -199,32 +207,11 @@ nav ul li {
     width: 100%;
 }
 
-nav ul li:nth-child(-n+8) a {
+nav ul li a {
     padding: 25px 0;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-nav ul.sns_list li:nth-child(-n+8) a {
-    width: auto;
-}
-
-nav ul.sns_list li {
-    margin: 0 20px;
-}
-
-nav ul.sns_list li a {
-    padding: 25px;
-}
-
-nav ul.sns_list li a img {
-    width: auto;
-}
-
-nav ul li:last-child,
-ul.sns_list li {
-    border-bottom: none;
 }
 
 nav ul li:nth-child(-n+8)::after,
@@ -315,15 +302,14 @@ nav a i {
     background: rgba(255, 255, 255, 0.6);
 }
 
-.swiper-slide img {
+#hero .swiper-slide img {
     width: 100% !important;
 }
 
-#hero {
+.hero_wrap {
     max-width: 1120px;
     margin: 0 auto;
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
     box-shadow: 0 8px 30px rgba(30, 40, 30, 0.06);
     overflow: hidden;
     padding: 0;
@@ -446,7 +432,87 @@ h1 {
     margin-top: 40px;
 }
 
-/* Services */
+/* ==========================
+   Examples
+========================== */
+
+.examples_wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.examples-lead {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.examples-swiper {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.example-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: 0 8px 18px rgba(20, 30, 20, .04);
+}
+
+.example-image {
+    display: block;
+    width: 50%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.example-caption {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* navigation */
+
+.examples-prev,
+.examples-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+
+    cursor: pointer;
+}
+
+.examples-prev {
+    left: -20px;
+}
+
+.examples-next {
+    right: -20px;
+}
+
+.examples-prev i,
+.examples-next i {
+    color: var(--brand-1);
+}
+
+/* Approach */
 .service-group {
     margin: 30px 0 20px 0;
 }
@@ -531,11 +597,27 @@ h1 {
     display: flex;
 }
 
-#services i.fas {
+#approach i.fas {
     padding: 0 20px;
 }
 
 /* Pricing */
+
+/* 基本メニュー */
+
+.main-pricing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.featured-plan {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    /* max-width: 760px; */
+}
+
 .pricing-tab {
     padding: 0;
     display: flex;
@@ -719,7 +801,7 @@ h1 {
 }
 
 /* Q&A */
-#qa {
+.qa_wrap {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -783,7 +865,7 @@ h1 {
 }
 
 /* Access */
-#access {
+.access_wrap {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -849,6 +931,8 @@ h1 {
     overflow: hidden;
     box-shadow: 0 16px 40px rgba(20, 30, 20, 0.1);
     display: flex;
+    width: 400px;
+    height: 200px;
 }
 
 .profile-visual img {
@@ -856,12 +940,96 @@ h1 {
     height: 200px;
 }
 
+/* ==========================
+   Balm
+========================== */
+
+#balm {
+    background: #f8fbf9;
+}
+
+.balm-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.balm-image img {
+    width: 100%;
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.balm-subtitle {
+    color: var(--brand-2);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+#balm h2 {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+#balm h2 span {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.balm-copy {
+    font-size: 22px;
+    color: var(--brand-1);
+    font-weight: 600;
+}
+
+.balm-content p {
+    line-height: 1.9;
+}
+
+.balm-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    background: var(--brand-1);
+    color: #fff;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.balm-btn:hover {
+    background: var(--brand-2);
+    color: var(--brand-1);
+}
+
 /*Contact*/
 #contact {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 24px;
+    padding: 80px 24px;
     text-align: center;
+}
+
+.contact_wrap {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #contact p {
@@ -906,6 +1074,17 @@ h1 {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
+.shop-btn {
+    width: 50vw;
+    margin-top: 20px;
+}
+
+.shop-btn img {
+    max-width: 50%;
+    border-radius: var(--radius)
+}
+
+
 /*footer*/
 footer {
     background: var(--brand-1);
@@ -942,7 +1121,7 @@ p.copy {
     }
 
     section {
-        padding: 50px 20px 0;
+        padding: 25px 20px;
     }
 
     #hero {
@@ -950,6 +1129,11 @@ p.copy {
         height: 132vw;
         margin: 0;
         border-radius: 0;
+        position: relative;
+    }
+
+    .hero_wrap {
+        position: static;
     }
 
     .hero {
@@ -1001,6 +1185,8 @@ p.copy {
 
     .profile-visual {
         margin: 6vw;
+        width: auto;
+        height: auto;
     }
 
     .profile-visual img {
@@ -1046,6 +1232,49 @@ p.copy {
 
     p.copy {
         font-size: 12px;
+    }
+
+    #examples {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .example-card {
+        padding: 12px;
+    }
+
+    .example-caption {
+        text-align: left;
+    }
+
+    .examples-prev,
+    .examples-next {
+        top: 30%;
+    }
+
+    .example-image {
+        width: 90%;
+    }
+
+    .balm-wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #balm h2 {
+        text-align: center;
+    }
+
+    .balm-content {
+        text-align: center;
+    }
+
+    .shop-btn {
+        width: 80vw;
+    }
+
+    .shop-btn img {
+        max-width: 100%;
     }
 }
 

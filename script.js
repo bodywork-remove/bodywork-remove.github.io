@@ -17,6 +17,22 @@ const swiper = new Swiper(".swiper-container", {
     },
 });
 
+const examplesSwiper = new Swiper('.examples-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+
+    pagination: {
+        el: '.examples-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.examples-next',
+        prevEl: '.examples-prev',
+    },
+});
+
 
 /*tab切り替え*/
 const select = document.querySelectorAll('.select');
