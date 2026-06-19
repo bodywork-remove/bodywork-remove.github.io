@@ -448,7 +448,6 @@ h1 {
 
 .examples-swiper {
     position: relative;
-    padding-bottom: 60px;
 }
 
 .example-card {
@@ -865,33 +864,40 @@ h1 {
 }
 
 /* Access */
-.access_wrap {
-    max-width: 1100px;
+.access-card {
+    max-width: 600px;
     margin: 0 auto;
 }
 
-#access h3 {
-    margin-top: 0;
-    color: var(--brand-1);
-}
-
-.access-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.fa-solid.fa-location-dot {
-    color: var(--brand-2);
-}
-
-#access .notes {
+.access-item {
     display: flex;
-    justify-content: center;
-    color: var(--muted);
-    margin-top: 24px;
-    font-size: 12px;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
 }
+
+.access-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.access-item i {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    margin-top: 4px;
+    width: 24px;
+    text-align: center;
+}
+
+.access-item h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+
+.access-item p {
+    margin: 0;
+    line-height: 1.8;
+}
+
 
 /*Profile*/
 #profile h3 {
@@ -943,10 +949,6 @@ h1 {
 /* ==========================
    Balm
 ========================== */
-
-#balm {
-    background: #f8fbf9;
-}
 
 .balm-wrap {
     max-width: 1100px;
@@ -1194,10 +1196,6 @@ p.copy {
         height: 30vw;
     }
 
-    .access-grid {
-        grid-template-columns: 1fr;
-    }
-
     .cards-2column,
     .cards-3column {
         grid-template-columns: 1fr;
@@ -1276,6 +1274,12 @@ p.copy {
     .shop-btn img {
         max-width: 100%;
     }
+
+    #access .container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
 }
 
 /* Simple fade-in animation */
