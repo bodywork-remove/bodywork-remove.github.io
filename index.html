@@ -2,39 +2,97 @@
 <html lang="ja">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L44586L6ZY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L44586L6ZY');
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="ダンサー整体、反射の統合ワーク、療育整体、パーソナルピラティスなどを組み合わせ、踊りやすい身体づくりをサポートするRe:move。渋谷・恵比寿・横浜エリアでセッションを行っています。TheraMove Dance Balmの販売も行っています。">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Re:move｜ダンス上達サポート・整体×パーソナルピラティス（渋谷・恵比寿・横浜）">
+  <meta property="og:title" content="ダンス上達サポート・整体×パーソナルピラティス｜Re:move｜渋谷・恵比寿・横浜">
   <meta property="og:description"
     content="ダンサー整体、反射の統合ワーク、療育整体、パーソナルピラティスなどを組み合わせ、踊りやすい身体づくりをサポートするRe:move。渋谷・恵比寿・横浜エリアでセッションを行っています。TheraMove Dance Balmの販売も行っています。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bodywork-remove.github.io/">
   <meta property="og:image" content="https://bodywork-remove.github.io/images/remove.png">
-  <title>Re:move｜ダンス上達サポート・整体×パーソナルピラティス（渋谷・恵比寿・横浜）</title>
+  <meta property="og:site_name" content="Re:move">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#35524a">
+  <title>ダンス上達サポート・整体×パーソナルピラティス｜Re:move｜渋谷・恵比寿・横浜</title>
   <link rel="canonical" href="https://bodywork-remove.github.io/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <img class="logo" src="images/remove.png" alt="Re:move ロゴ" />
+    <a href="/"><img class="logo" src="images/remove.png" alt="Re:move ロゴ" /></a>
     <nav aria-label="グローバルナビゲーション">
       <ul>
-        <li><a href="#about"><i class="fas fa-thumbtack"></i>About</a></li>
-        <li><a href="#examples"><i class="fas fa-chart-line"></i>Examples</a></li>
-        <li><a href="#approach"><i class="fas fa-hand-holding"></i>Approach</a></li>
-        <li><a href="#pricing"><i class="fas fa-donate"></i>pricing</a></li>
-        <li><a href="#profile"><i class="far fa-address-card"></i>Profile</a></li>
+        <li><a href="index.html#about"><i class="fas fa-thumbtack"></i>About</a></li>
+        <li class="has-submenu">
+
+          <div class="submenu-toggle">
+
+            <a href="index.html#support">
+              <span>
+                <i class="fas fa-hands-helping"></i>Support
+              </span>
+            </a>
+
+            <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
+              <i class="fas fa-chevron-down submenu-arrow"></i>
+            </button>
+
+          </div>
+
+          <ul class="submenu">
+            <li><a href="dance-support.html">ダンス上達サポート</a></li>
+            <li><a href="seitai-pilates.html">整体×ピラティス</a></li>
+          </ul>
+
+        </li>
+        <li><a href="index.html#examples"><i class="fas fa-chart-line"></i>Examples</a></li>
+        <li class="has-submenu">
+
+          <div class="submenu-toggle">
+
+            <a href="approach.html">
+              <span>
+                <i class="fas fa-hand-holding"></i>Approach
+              </span>
+            </a>
+
+            <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
+              <i class="fas fa-chevron-down submenu-arrow"></i>
+            </button>
+
+          </div>
+
+          <ul class="submenu">
+            <li><a href="dancer-seitai.html">ダンサー整体</a></li>
+            <li><a href="tougou-work.html">反射の統合ワーク</a></li>
+            <li><a href="pilates.html">ピラティス</a></li>
+          </ul>
+
+        </li>
+        <li><a href="index.html#pricing"><i class="fas fa-donate"></i>pricing</a></li>
+        <li><a href="index.html#profile"><i class="far fa-address-card"></i>Profile</a></li>
         <li><a href="#qa"><i class="far fa-question-circle"></i>Q&amp;A</a></li>
-        <li><a href="#balm"><i class="fas fa-shopping-bag"></i>TheraMove Dance Balm</a></li>
-        <li><a href="#access"><i class="fas fa-map-marker-alt"></i>Access</a></li>
+        <li><a href="index.html#balm"><i class="fas fa-shopping-bag"></i>TheraMove Dance Balm</a></li>
+        <li><a href="index.html#access"><i class="fas fa-map-marker-alt"></i>Access</a></li>
         <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
       </ul>
     </nav>
@@ -44,7 +102,6 @@
   <main>
     <button type="button" class="swiper-button-prev"></button>
     <button type="button" class="swiper-button-next"></button>
-    </div>
     <section id="hero">
       <div class="hero_wrap">
         <div class="swiper-container">
@@ -62,12 +119,12 @@
         </div>
         <div class="hero">
           <div class="copy">
-            <h1>踊りやすい身体をつくる<br>整体×パーソナルピラティス</h1>
-            <p class="lead">いくつからでも自分史上最高の体へ</p>
+            <h1>整体×ピラティスで<br>動きやすい身体をつくる</h1>
+            <p class="lead">いくつからでも、自分史上最高の身体へ</p>
             <p>
-              ダンサー整体・反射の統合ワーク・療育整体<br class="sp">などを組み合わせ、<br>
-              姿勢・動作・感覚・発達など多角的な視点から<br>
-              動きやすい身体づくりをサポートします。
+              ダンスのパフォーマンスアップから<br class="sp">日常生活の身体づくりまで。<br>
+              姿勢・動作・感覚・発達など<br class="sp">多角的な視点を取り入れ、<br>
+              一人ひとりに合わせた身体づくりを<br class="sp">サポートします。
             </p>
             <div class="btn arrow">
               <a href="#contact" class="cta"><i class="fas fa-play"></i> 予約する</a>
@@ -79,7 +136,7 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2>About<br><span>踊る身体のための整体×ピラティスについて</span></h2>
+      <h2>About<br><span>身体を変えるアプローチについて</span></h2>
       <div class="container">
         <div class="about-text">
           <h3>"本来の動き" を取り戻す</h3>
@@ -87,12 +144,13 @@
             動きづらさや不調の原因が分からない。<br>
             そんな悩みを、年齢や才能のせいにしていませんか。<br>
             大人の方にもまだまだ伸び代があります。<br>
-            Re:moveでは、ダンサー整体や反射の統合ワーク、パーソナルピラティスなどを組み合わせたアプローチで、身体の機能を総合的に整えていきます。<br>
-            施術で身体の土台を整え、ピラティスで「使える動き」へつなげることで、ダンスパフォーマンスを発揮しやすい、人間本来の自然な動きを取り戻すことを目指します。
+            Re:moveでは、ダンスのパフォーマンスアップを目指す方へのサポートを中心に、整体とピラティスを軸として、一人ひとりの身体の状態や目的に合わせた身体づくりを行っています。<br>
+            施術で身体の土台を整え、ピラティスで「使える動き」へつなげることで、パフォーマンスを発揮しやすい、人間本来の自然な動きを取り戻すことを目指します。<br>
+            ダンサーだけでなく、姿勢や身体の使い方を見直したい一般の方にもご利用いただいています。
           </p>
           <h3>一人一人に合わせたメニュー</h3>
           <p>丁寧なカウンセリングと姿勢・動作分析で身体の状態を見極め、最適な施術とトレーニングをご提案します。<br>
-            一人一人の状態に合わせた完全オーダーメイドの整体とピラティスで、無理なく、長く踊れる身体を目指します。<br>
+            一人一人の状態に合わせた完全オーダーメイドの整体とピラティスで、目的に合わせた動きやすい身体づくりをサポートします。<br>
             本気で身体を変えたい人におすすめです。
           </p>
         </div>
@@ -101,6 +159,76 @@
           <img src="images/about.jpg" alt="ダンサー整体の施術">
           <figcaption>痛みや不調を取り除くremoveと、<br class="sp">re(再び)move(動く)で <br class="pc">"Re:move" です。</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support">
+      <div class="support_wrap">
+
+        <div class="section_title">
+          <h2>Support<br><span>あなたに合ったサポートをお選びください</span></h2>
+        </div>
+
+        <p class="support_lead">
+          Re:moveでは、整体とパーソナルピラティスを軸に、<br>
+          一人ひとりの身体の状態に合わせたサポートを行っています。<br>
+          目的に合わせて、最適なコースをご覧ください。
+        </p>
+
+        <div class="support_cards">
+
+          <a href="dance-support.html" class="support_card">
+            <span class="menu-category">Dance</span>
+
+            <h3>ダンス上達サポート</h3>
+
+            <p>
+              ダンサー・バレエ・舞台・スポーツなど、パフォーマンス向上や踊りやすい身体づくりをサポートします。
+            </p>
+
+            <span class="button">
+              詳しく見る
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <a href="seitai-pilates.html" class="support_card">
+
+            <span class="menu-category">General</span>
+
+            <h3>整体×ピラティス</h3>
+
+            <p>
+              姿勢・身体の使い方・日常の動きやすさなど、日常生活をより快適に過ごせる身体づくりをサポートします。
+            </p>
+
+            <span class="button">
+              詳しく見る
+              <i class="fas fa-arrow-right"></i>
+            </span>
+
+          </a>
+
+          <!--div class="support_card comingsoon">
+  
+            <span class="label">Development</span>
+  
+            <h3>発達サポート</h3>
+  
+            <p>
+              発達の視点を取り入れた整体とピラティスによるサポートです。<br>
+              現在準備中です。
+            </p>
+  
+            <span class="coming">
+              Coming Soon
+            </span>
+  
+          </div-->
+
+        </div>
+
       </div>
     </section>
 
@@ -169,133 +297,102 @@
 
     <!-- Approach Section -->
     <section id="approach">
-      <h2 class="section-title">Approach<br><span>踊りやすい身体をつくるための多角的なアプローチ</span></h2>
-      <div class="service-group">
-        <h3 class="center-text">体を整える</h3>
-        <p class="center-text">
-          神経・関節・反射レベルから身体の土台を整えます。<br>
-          力を出しやすく、脱力もしやすい状態をつくるアプローチです。
-        </p>
-        <div class="cards-1column">
-          <div class="card">
-            <div class="h3-area">
-              <i class="fas fa-hands"></i>
-              <h3>ダンサー整体</h3>
-            </div>
-            <p>
-              ダンサー整体は、ダンサーの身体特性を踏まえ、パフォーマンス向上や踊りづらさの改善を目指す整体です。<br>
-              筋肉を揉みほぐさず、ソフトな施術のみで全身のバランスを整えます。
-            </p>
-            <p>「踊るための身体」に特化していますが、ダンスをしていない方にも有効です。<br>
-              日常の不調改善やスポーツのパフォーマンス向上にも対応しています。
-            </p>
-          </div>
-          <div class="card">
-            <div class="h3-area">
-              <div class="h3-area">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>反射の統合ワーク</h3>
-              </div>
-            </div>
-            <p>
-              赤ちゃんが生まれつき持っている無意識の反応である、固める反射や、モロー反射などの原始反射。<br>
-              成長過程で統合されるはずの反射が残存すると、身体の緊張、集中力低下、感情の不安定さなどに影響することがあります。<br>
-              大人になってからも残存する反射の影響を受けているケースがあり、体の使いづらさや学習・運動面の課題につながることがあります。</p>
-            <p>
-              優しく触れたりなでたりするボディワークで反射の統合を促します。<br>
-              運動能力、集中力、感情の安定、学習面など多方面に効果が期待できます。</p>
-            <p>
-              Re:moveでは“ダンサー整体の触れ方”を取り入れて行うのが特徴です。<br>
-              反射を統合しながら筋肉も緩み、体が軽くなる一石二鳥の施術です。
-            </p>
-          </div>
-          <div class="card">
-            <div class="h3-area">
-              <i class="fas fa-brain"></i>
-              <h3>療育整体</h3>
-            </div>
-            <p>
-              身体的アプローチを通じて発達や成長をサポートする全身調整法です。<br>
-              姿勢や筋力だけでなく、神経系の働きや感覚入力の状態も踏まえながら、身体が本来持つ機能を引き出していきます。<br>
-              心身の緊張をやわらげることで、姿勢や動作の改善、自律神経の安定、脳と神経のネットワークの活性化を目指します。
-            </p>
 
-            <p>
-              「体が思うように動かない」「力加減が分からない」「左右差が大きい」「ダンスの振付がなかなか覚えられない」など、練習量だけでは解決しにくい課題の背景に発達の特性が関わっていることがあります。<br>
-              発達性協調運動障害（DCD）のように、運動や身体のコントロールに苦手さを抱える方にも身体面からアプローチします。
-            </p>
+      <div class="approach_wrap">
 
-            <p>
-              療育というと一般的には発達障害やその傾向（グレーゾーン）がある子どもを対象とした支援をイメージされることが多いですが、Re:moveでは大人の発達にも着目しています。<br>
-              発達特性を持つ方はもちろん、子どもの頃から続く不器用さや体の使いづらさに悩む方、発達性協調運動障害（DCD）の傾向が気になる方に対しても、身体的アプローチでサポートします。
-            </p>
-          </div>
-          <div class="card">
-            <div class="h3-area">
-              <i class="fas fa-bolt"></i>
-              <h3>PNF</h3>
-            </div>
-            <p>
-              PNF（固有受容性神経筋促通法）は、神経と筋のつながりを高めて動きを引き出すリハビリテーション手技です。<br>
-              神経疾患のリハビリとして開発され、現在は理学療法・スポーツ・整体分野で活用されています。</p>
-            <p>
-              筋肉を鍛えるのではなく、神経系を通じて「動かし方」「力の伝え方」を整えます。<br>
-              Re:moveでは股関節・脚を中心に取り入れ前屈や開脚、ターンアウトの可動域向上、O脚改善、足首の可動域改善などに対応しています。<br>
-              今後は骨盤や上半身にも展開予定です。
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="service-group">
-        <h3 class="center-text">動きを変える</h3>
-        <p class="center-text">
-          整えた身体を、使える動きへ。<br>
-          呼吸と連動させながら安定性と可動性を高めます。
+        <h2 class="section-title">
+          Approach<br>
+          <span>多角的な視点で身体を見つめるアプローチ</span>
+        </h2>
+
+        <p class="approach_lead">
+          Re:moveでは、一つの施術だけではなく、<br>
+          身体の状態や目的に合わせて<br class="sp">様々なアプローチを組み合わせています。<br>
+          それぞれの特徴を活かし、<br class="sp">一人一人に合わせた身体づくりをご提案します。
         </p>
-        <div class="cards-1column">
-          <div class="card">
-            <div class="h3-area">
-              <i class="fas fa-walking icon-pilates"></i>
-              <h3>ピラティス</h3>
+
+        <div class="approach_cards">
+
+          <a href="dancer-seitai.html" class="approach_card">
+            <div class="label_group">
+              <span class="label seitai">整体</span><span class="label neural">神経</span>
             </div>
-            <p>
-              体幹（コア）を中心に全身を整え、踊りに必要な安定性と可動性を高めます。<br>
-              背骨の柔軟性・可動域・安定性を高めることに重点を置いています。</p>
-            <p>
-              背骨を柔らかく保つことは若々しさと健康維持にもつながります。<br>
-              呼吸と動きを連動させることで、自律神経の調整効果も期待できます。
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="service-group">
-        <h3 class="center-text">身体の声を知る</h3>
-        <p class="center-text">
-          筋反射テストを用いて、無意識レベルの反応を確認します。
-        </p>
-        <div class="cards-1column">
-          <div class="card">
-            <div class="h3-area">
-              <i class="fas fa-mug-hot"></i>
-              <h3>キネシオロジー</h3>
+            <h3>ダンサー整体</h3>
+            <p>踊る身体に特化した整体。一般の方やスポーツをされる方にも対応しています。</p>
+            <span class="button">
+              詳しく見る
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <a href="tougou-work.html" class="approach_card">
+            <div class="label_group">
+              <span class="label seitai">整体</span><span class="label neural">神経</span><span
+                class="label development">発達</span>
             </div>
-            <p>
-              筋反射テストを使い、体が無意識に示す反応から心身の状態を読み取る方法です。<br>
-              刺激や質問に対して筋肉が「入りやすい／入りにくい」と変化する反応を活用します。</p>
-            <p>
-              言葉では捉えにくいストレスや本音を確認したり、体に合う／合わないもの（食べ物・アロマ・サプリなど）を見極めるサポートを行います。<br>
-              潜在意識レベルから整えるアプローチです。
-            </p>
+            <h3>反射の統合ワーク</h3>
+            <p>身体が無意識に行っている反応へアプローチし、本来の力を発揮しやすい状態へ導きます。</p>
+            <span class="button">
+              詳しく見る
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <div class="approach_card">
+            <div class="label_group">
+              <span class="label seitai">整体</span><span class="label neural">神経</span><span
+                class="label development">発達</span>
+            </div>
+            <h3>療育整体</h3>
+            <p>発達や感覚の視点から、大人の身体づくりもサポートします。</p>
           </div>
+
+          <div class="approach_card">
+            <div class="label_group">
+              <span class="label seitai">整体</span><span class="label neural">神経</span><span
+                class="label pnf">運動学習</span>
+            </div>
+            <h3>PNF</h3>
+            <p>神経と筋肉の連携を高め、効率よく動ける身体へ導きます。</p>
+          </div>
+
+          <a href="pilates.html" class="approach_card">
+            <div class="label_group">
+              <span class="label neural">神経</span><span class="label pnf">運動学習</span>
+            </div>
+            <h3>ピラティス</h3>
+            <p>整えた身体を使える動きへ。安定性と可動性を高めます。</p>
+            <span class="button">
+              詳しく見る
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <a href="kinesiology.html" class="approach_card">
+            <div class="label_group">
+              <span class="label assessment">対話</span>
+            </div>
+            <h3>キネシオロジー</h3>
+            <p>筋反射テストを用いて、身体と対話しながら身体の声を読み取ります。</p>
+          </a>
+
         </div>
+
+        <div class="approach_message">
+          <p>
+            身体は一人ひとり違うからこそ、<br class="sp">必要なアプローチも一人ひとり異なります。<br>
+            Re:moveでは、一つの方法にこだわらず、<br class="sp">身体の状態や目的に合わせて<br class="sp">最適な組み合わせをご提案しています。
+          </p>
+        </div>
+
+        <div class="approach_btn_area">
+          <a href="approach.html" class="approach_btn">
+            アプローチ一覧を見る
+          </a>
+        </div>
+
       </div>
-      <div class="service-cta">
-        <p class="center-text">
-          どのアプローチが必要か迷われる場合は、<br>
-          状態に合わせて組み合わせる「ダンス上達サポート90分」がおすすめです。<br>
-          初回は体験しやすい特別価格をご用意しています。
-        </p>
-      </div>
+
     </section>
 
     <!-- Pricing Section -->
@@ -315,26 +412,22 @@
         </ul>
 
         <div class="pricing-type">
-          <p>Re:moveの考え方と施術を最も体感できる基本メニューです。</p>
+          <h3>おすすめメニュー</h3>
+          <p>体を根本から変えていきたい方におすすめのメニューです。</p>
 
-          <div class="pricing-grid grid3 main-pricing">
-
+          <div class="pricing-grid main-pricing">
             <div class="price-card recommended featured-plan">
               <div class="badge-90">
-                <i class="fas fa-crown"></i> 基本メニュー
+                <i class="fas fa-crown"></i> おすすめ
               </div>
-
               <div class="lead-90">
-                迷ったらこちら
+                ダンスをされる方におすすめ
               </div>
-
               <h4>ダンス上達サポート　90分</h4>
-
               <div class="price-amount">
                 ¥10,000<br>
                 <span>（初回 ¥8,000）</span>
               </div>
-
               <p>
                 ダンスのために、<br class="sp">体そのものを変えていきたい大人の方へ。<br>
                 ダンサー整体、反射の統合ワーク、<br class="sp">療育整体などを<br class="sp">身体の状態に応じて組み合わせ、<br>
@@ -342,15 +435,90 @@
                 施術で整えた体を、<br class="sp">実際のダンスの動きにつなげていく<br class="sp">
                 Re:moveの基本となる組み合わせです。
               </p>
-
               <a href="#contact" class="btn-primary reserve">
                 <i class="fas fa-star"></i> 予約する
               </a>
             </div>
 
-            <div class="price-card">
-              <h4>ダンス上達サポート　120分</h4>
+            <div class="price-card recommended featured-plan">
+              <div class="badge-90">
+                <i class="fas fa-crown"></i>おすすめ
+              </div>
+              <div class="lead-90">
+                身体づくりにおすすめ
+              </div>
+              <h4>整体×ピラティス　90分</h4>
+              <div class="price-amount">
+                ¥10,000<br>
+                <span>（初回 ¥8,000）</span>
+              </div>
+              <p>
+                肩こりや腰痛などの不調を<br class="sp">繰り返さないために。<br>
+                整体で身体を整え、<br class="sp">ピラティスで無理なく動ける<br class="sp">身体づくりを行います。<br>
+                呼吸・姿勢・動きを整えながら、<br class="sp">日常生活や趣味を<br class="sp">もっと快適に楽しめる身体を目指す、<br>
+                Re:moveのスタンダードセッションです。
+              </p>
+              <a href="#contact" class="btn-primary reserve">
+                <i class="fas fa-star"></i> 予約する
+              </a>
+            </div>
+          </div>
 
+          <h3>単体メニュー</h3>
+          <p>目的に応じて単独でも受けられるメニューです。</p>
+          <div class="pricing-grid grid3">
+            <div class="price-card">
+              <h4>ダンサー整体　60分</h4>
+              <div class="price-amount">
+                ¥8,000<br>
+                <span>（初回 ¥6,000）</span>
+              </div>
+              <p>
+                本番前後のメンテナンスや、<br>
+                不調のケアを中心に受けたい方へ。<br>
+                ソフトな施術で全身を整え、<br>
+                動きやすい状態へ導きます。
+              </p>
+              <a href="#contact" class="btn-primary reserve">予約する</a>
+            </div>
+
+            <div class="price-card">
+              <h4>反射の統合ワーク　60分</h4>
+              <div class="price-amount">
+                ¥8,000<br>
+                <span>(初回 ¥6,000)</span>
+              </div>
+              <p>
+                無意識の反応をやさしく整えることで、<br>
+                身体の緊張や使いづらさ、<br>
+                その他さまざまな“生きづらさ”の<br>
+                改善を目指すセッションです。
+              </p>
+              <a href="#contact" class="btn-primary reserve">予約する</a>
+            </div>
+
+            <div class="price-card">
+              <h4>キネシオロジー　45分</h4>
+              <div class="price-amount">
+                ¥5,000<br>
+              </div>
+              <p>
+                筋反射テストを用いて、<br>
+                体に合う・合わないを確認する<br>
+                セッションです。<br>
+                気になるものがあれば<br>
+                （アロマ・食べ物・サプリなど）<br>
+                お持ちください。
+              </p>
+              <a href="#contact" class="btn-primary reserve">予約する</a>
+            </div>
+          </div>
+
+          <h3>特別プラン・短時間プラン</h3>
+          <div class="pricing-grid grid3 main-pricing">
+            <div class="price-card">
+              <h4>120分プラン</h4>
+              <p>ダンス上達サポート／整体×ピラティス共通</p>
               <div class="price-amount">¥16,000</div>
 
               <p>
@@ -362,78 +530,13 @@
 
               <a href="#contact" class="btn-primary reserve">予約する</a>
             </div>
-
             <div class="price-card">
-              <h4>ダンス上達サポート　60分</h4>
-
+              <h4>60分プラン</h4>
+              <p>ダンス上達サポート／整体×ピラティス共通</p>
               <div class="price-amount">¥8,000</div>
-
               <p>
                 時間やご予算の都合がある中で、<br>
                 体を変えたい方へ。
-              </p>
-
-              <a href="#contact" class="btn-primary reserve">予約する</a>
-            </div>
-
-          </div>
-
-          <h3>目的別メンテナンス・調整</h3>
-
-          <p>その時の状態や目的に合わせて選べるメニューです。</p>
-
-          <div class="pricing-grid grid3">
-
-            <div class="price-card">
-              <h4>ダンサー整体　60分</h4>
-
-              <div class="price-amount">
-                ¥8,000<br>
-                <span>（初回 ¥6,000）</span>
-              </div>
-
-              <p>
-                本番前後のメンテナンスや、<br>
-                不調のケアを中心に受けたい方へ。<br>
-                ソフトな施術で全身を整え、<br>
-                動きやすい状態へ導きます。
-              </p>
-
-              <a href="#contact" class="btn-primary reserve">予約する</a>
-            </div>
-
-            <div class="price-card">
-              <h4>反射の統合ワーク　60分</h4>
-
-              <div class="price-amount">
-                ¥8,000<br>
-                <span>(初回 ¥6,000)</span>
-              </div>
-
-              <p>
-                無意識の反応をやさしく整えることで、<br>
-                身体の緊張や使いづらさ、<br>
-                その他さまざまな“生きづらさ”の<br>
-                改善を目指すセッションです。
-              </p>
-
-              <a href="#contact" class="btn-primary reserve">予約する</a>
-            </div>
-
-            <div class="price-card">
-              <h4>キネシオロジー　45分</h4>
-
-              <div class="price-amount">
-                ¥5,000<br>
-              </div>
-
-              <p>
-                筋反射テストを用いて、<br>
-                体に合う・合わないを確認する<br>
-                セッションです。<br>
-                気になるものがあれば<br>
-                （アロマ・食べ物・サプリなど）<br>
-                お持ちください。
               </p>
 
               <a href="#contact" class="btn-primary reserve">予約する</a>
@@ -515,7 +618,7 @@
               <li>ダンサー整体セラピストAdvance</li>
               <li>PNFストレッチBASICトレーナー</li>
               <li>反射の統合ワーカー</li>
-              <li>療育整体師</li>
+              <li>療育整体マイスター</li>
             </ul>
           </div>
           <figure class="profile-visual">
@@ -579,8 +682,8 @@
               <details class="qa-item">
                 <summary>Q.どのメニューを選べば良いですか？</summary>
                 <p>
-                  A.迷った場合は「ダンス上達サポート　90分」がおすすめですが、お気軽にご相談ください。<br>
-                  現在のお悩みや目的に合わせて最適な内容をご提案いたします。
+                  A.ダンスの上達を目的とした方は「ダンス上達サポート 90分」、姿勢や身体づくりを目的とした方は「整体×ピラティス 90分」がおすすめです。<br>
+                  迷われる場合は、お悩みや目的に合わせて最適なメニューをご提案いたします。
                 </p>
               </details>
 
@@ -644,8 +747,6 @@
                   Examplesでご紹介しているように、一回の施術やセッションでも姿勢や動きに変化が見られることは珍しくありません。<br>
                   私自身も大人になってから身体を変えてきた一人だからこそ、身体が硬いことを理由に可能性を決めつけてほしくないと考えています。
                 </p>
-
-                </p>
               </details>
 
               <details class="qa-item">
@@ -695,7 +796,7 @@
           </p>
 
           <h2>
-            TheraMove Dance Balm
+            TheraMove <br class="sp">Dance Balm
             <span>ご自宅でのセルフケアに</span>
           </h2>
 
@@ -799,7 +900,7 @@
   </main>
 
   <footer>
-    <p class="copy">© Re:move｜踊りやすい身体をつくる整体×パーソナルピラティス</p>
+    <p class="copy">© Re:move｜踊りやすい身体をつくる整体×ピラティス</p>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -1,0 +1,335 @@
+.dance-support-page .page-hero {
+    background:
+        linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
+        url(images/dance-support.png) center/cover;
+}
+
+.seitai-pilates-page .page-hero {
+    background:
+        linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
+        url(images/seitai-pilates.jpg) center top 10%/cover;
+}
+
+
+/* ==========================
+   上達しない理由
+========================== */
+
+#reason {
+    padding: 100px 20px;
+}
+
+#reason .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* --------------------------
+   メッセージ
+-------------------------- */
+
+.reason-message {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #fff;
+    border-radius: 24px;
+    border-left: 6px solid var(--brand-1);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.reason-message h3 {
+    color: var(--brand-1);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.reason-message p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.reason-message p:last-child {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+#service-approach {
+    padding: 100px 20px;
+}
+
+#service-approach .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-timeline {
+    max-width: 900px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.service-timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #d8e5de;
+}
+
+.timeline-item,
+.timeline-result {
+    position: relative;
+    display: flex;
+    gap: 35px;
+    padding-bottom: 50px;
+}
+
+.timeline-result {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--brand-1);
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 2px var(--brand-2);
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.timeline-dot.result {
+    background: var(--brand-2);
+}
+
+.timeline-content {
+    flex: 1;
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+}
+
+.timeline-content h3 {
+    margin-bottom: 18px;
+    color: var(--brand-1);
+}
+
+.timeline-content p {
+    line-height: 2;
+}
+
+.timeline-content p+p {
+    margin-top: 15px;
+}
+
+@media(max-width:768px) {
+
+    .service-timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item,
+    .timeline-result {
+        gap: 20px;
+    }
+
+    .timeline-dot {
+        width: 30px;
+        height: 30px;
+        border-width: 5px;
+    }
+
+    .timeline-content {
+        padding: 28px 22px;
+    }
+
+}
+
+/* メッセージ */
+.service-approach-message {
+    max-width: 900px;
+    margin: 50px auto 0;
+    background: #fff;
+    border-left: 6px solid var(--brand-1);
+    border-radius: 20px;
+    padding: 35px 40px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+}
+
+.service-approach-message h3 {
+    color: var(--brand-1);
+    margin-bottom: 15px;
+}
+
+/* =========================
+   service compare table
+========================= */
+
+.service-table-wrap {
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+
+.service-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.service-table th,
+.service-table td {
+    padding: 25px 20px;
+    text-align: center;
+    line-height: 1.8;
+
+    border-bottom: 1px solid rgba(53, 82, 74, 0.15);
+}
+
+
+/* header */
+
+.service-table thead th {
+    background: var(--brand-1);
+    color: #ffffff;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+
+.service-table thead th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+
+.service-table thead th:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+
+/* row title */
+
+.service-table tbody th {
+    width: 18%;
+
+    background: rgba(191, 217, 206, 0.25);
+
+    color: var(--brand-1);
+    font-weight: 600;
+}
+
+
+/* normal cells */
+
+.service-table tbody td {
+    background: #ffffff;
+}
+
+
+/* Re:move recommended column */
+
+.service-table .highlight {
+    background: var(--accent);
+    font-weight: 600;
+    border-left: 2px solid var(--brand-2);
+    border-right: 2px solid var(--brand-2);
+}
+
+.service-table .highlight {
+    border-bottom: 2px solid var(--brand-2);
+}
+
+.service-table .highlight.last {
+    border-bottom: 2px solid var(--brand-2);
+    border-radius: 0 0 15px 0;
+}
+
+
+.service-table thead .highlight {
+    background: var(--brand-2);
+    color: var(--brand-1);
+}
+
+.service-table tr:last-child th,
+.service-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================
+   SP
+========================== */
+
+@media (max-width: 768px) {
+    .dance-support-page .page-hero {
+        background:
+            linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
+            url(images/dance-support.png) right 10% center/cover;
+    }
+
+    #reason {
+        padding: 80px 20px;
+    }
+
+    #reason .section-title {
+        margin-bottom: 40px;
+    }
+
+    .reason-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 50px;
+    }
+
+    .reason-card {
+        padding: 24px 18px;
+    }
+
+    .reason-card span {
+        font-size: 1.8rem;
+    }
+
+    .reason-message {
+        padding: 35px 24px;
+    }
+
+    .reason-message h3 {
+        font-size: 1.5rem;
+    }
+
+    #service-approach {
+        padding: 80px 20px;
+    }
+
+    .service-approach-message {
+        padding: 30px 20px;
+    }
+
+    .service-table {
+        min-width: 750px;
+    }
+
+    .service-table tr td {
+        text-align: left;
+    }
+}
