@@ -1,13 +1,13 @@
 .dance-support-page .page-hero {
     background:
         linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-        url(images/dance-support.png) center/cover;
+        url(images/dance-support.webp) center/cover;
 }
 
 .seitai-pilates-page .page-hero {
     background:
         linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-        url(images/seitai-pilates.jpg) center top 10%/cover;
+        url(images/seitai-pilates.webp) center top 10%/cover;
 }
 
 
@@ -284,7 +284,7 @@
     .dance-support-page .page-hero {
         background:
             linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-            url(images/dance-support.png) right 10% center/cover;
+            url(images/dance-support.webp) right 10% center/cover;
     }
 
     #reason {

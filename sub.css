@@ -23,7 +23,7 @@
 
 .dancer-page {
 
-    --hero-image: url(images/swiper2.jpg);
+    --hero-image: url(images/swiper2.webp);
 
 }
 
@@ -36,19 +36,19 @@
 .approach-page .page-hero {
     background:
         linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-        url(images/swiper3.jpg) center/cover;
+        url(images/swiper3.webp) center/cover;
 }
 
 .dancer-page .page-hero {
     background:
         linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-        url(images/swiper2.jpg) center/cover;
+        url(images/swiper2.webp) center/cover;
 }
 
 .pilates-page .page-hero {
     background:
         linear-gradient(rgba(53, 82, 74, .55), rgba(53, 82, 74, .55)),
-        url(images/swiper1.jpg) center/cover;
+        url(images/swiper1.webp) center/cover;
 }
 
 .tougou-work-page .page-hero {
