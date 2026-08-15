@@ -70,7 +70,7 @@ figcaption {
 }
 */
 
-p {
+/* p {
     color: var(--muted);
     font-size: 15px;
 }
@@ -78,7 +78,7 @@ p {
 img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Hero */
 .swiper-button-next,
@@ -149,7 +149,7 @@ img {
     box-shadow: 0 12px 26px rgba(53, 82, 74, 0.12);
 }
 
-/*About
+/*About*/
 #about h3 {
     margin: 0;
 }
@@ -215,7 +215,7 @@ img {
 Support
 ==============================*/
 
-/*#support {
+#support {
     padding: 100px 0;
     background: #fafcfb;
 }
@@ -232,7 +232,7 @@ Support
 ラベル
 ==============================*/
 
-/*.label_group {
+.label_group {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -254,7 +254,7 @@ Support
 
 /* ラベル色 */
 
-/*.seitai {
+.seitai {
 
     background: #DDEFE6;
 
@@ -350,7 +350,7 @@ Support
    Examples
 ========================== */
 
-/*.examples_wrap {
+.examples_wrap {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -390,7 +390,7 @@ Support
 
 /* navigation */
 
-/*.examples-prev,
+.examples-prev,
 .examples-next {
     position: absolute;
     top: 45%;
@@ -429,7 +429,7 @@ Support
 Approach
 ==============================*/
 
-/*#approach {
+#approach {
     padding: 100px 0;
 }
 
@@ -448,7 +448,7 @@ Approach
 
 /* カード */
 
-/*.approach_cards {
+.approach_cards {
 
     display: grid;
 
@@ -521,7 +521,7 @@ Approach
 
 /* メッセージ */
 
-/*.approach_message {
+.approach_message {
 
     max-width: 760px;
 
@@ -537,13 +537,13 @@ Approach
 
 /* ボタン */
 
-/*.approach_btn_area {
+.approach_btn_area {
 
     text-align: center;
 
 }
 
-/*.approach_btn {
+.approach_btn {
 
     display: inline-flex;
 
@@ -578,7 +578,7 @@ Approach
 /*==============================
 Responsive
 ==============================*/
-/*
+
 @media (max-width:900px) {
 
     .approach_cards {
@@ -629,7 +629,7 @@ Responsive
 
 /* 基本メニュー */
 
-/*.main-pricing {
+.main-pricing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -639,6 +639,7 @@ Responsive
     grid-column: 1 / -1;
     justify-self: center;
     width: 100%;
+    /* max-width: 760px; */
 }
 
 .pricing-tab {
@@ -832,7 +833,7 @@ Responsive
 }
 
 /* Access */
-/*/*.access-card {
+.access-card {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -868,7 +869,7 @@ Responsive
 
 
 /*Profile*/
-/*#profile h3 {
+#profile h3 {
     text-align: center;
     font-size: 28px;
     margin-top: 0;
@@ -946,7 +947,6 @@ Responsive
         font-size: 18px;
     }
 
-    /*
     figcaption {
         padding: 10px 0;
         text-align: center;
@@ -1043,7 +1043,7 @@ Responsive
 }
 
 /* Simple fade-in animation */
-    /*.fade-in {
+.fade-in {
     opacity: 0;
     transform: translateY(10px);
     animation: enter .7s forwards;
