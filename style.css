@@ -92,7 +92,6 @@ img {
     width: 100% !important;
 }
 
-/* 
 .hero_wrap {
     max-width: 1120px;
     margin: 0 auto;
@@ -115,7 +114,7 @@ img {
 
 #hero .copy {
     margin: 12% 0 0 5%;
-} */
+}
 
 #hero .copy p {
     color: #fff;
@@ -926,7 +925,7 @@ Responsive
 }
 
 @media (max-width:767px) {
-    /* #hero {
+    #hero {
         grid-template-columns: 1fr;
         height: 160vw;
         margin: 0;
@@ -946,7 +945,7 @@ Responsive
 
     #hero .copy p.lead {
         font-size: 18px;
-    } */
+    }
 
     figcaption {
         padding: 10px 0;
