@@ -1,20 +1,20 @@
 /*swiper*/
-const swiper = new Swiper(".swiper-container", {
-    // ドットインジケーターの表示
-    pagination: {
-        el: ".swiper-pagination",
-    },
-    // 前後スライドボタンを表示
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    loop: true, // ループの有効化
-    speed: 2000,
-    autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-    },
+window.addEventListener("load", function () {
+    const swiper = new Swiper(".swiper-container", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+    });
 });
 
 const examplesSwiper = new Swiper('.examples-swiper', {
