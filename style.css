@@ -86,9 +86,9 @@ img {
     background: rgba(255, 255, 255, 0.6);
 }
 
-#hero .swiper-slide img {
+/* #hero .swiper-slide img {
     width: 100% !important;
-}
+} */
 
 .hero_wrap {
     max-width: 1120px;
