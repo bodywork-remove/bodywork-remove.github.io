@@ -941,6 +941,10 @@ Responsive
         font-size: 18px;
     }
 
+    h1 {
+        font-size: 24px;
+    }
+
     figcaption {
         padding: 10px 0;
         text-align: center;
