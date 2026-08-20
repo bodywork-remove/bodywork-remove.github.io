@@ -95,7 +95,7 @@ header img.logo {
     height: 100px;
 }
 
-nav {
+.gnav {
     margin-left: auto;
     display: block;
     max-height: 0;
@@ -109,14 +109,14 @@ nav {
     opacity: 0;
 }
 
-nav.opened {
+.gnav.opened {
     max-height: 85vh;
     z-index: 10;
     top: 100px;
     opacity: 1;
 }
 
-nav ul {
+.gnav ul {
     justify-content: center;
     width: 80vw;
     margin: 0 auto;
@@ -124,43 +124,43 @@ nav ul {
     padding-left: 0;
 }
 
-nav ul.sns_list {
+.gnav ul.sns_list {
     height: auto;
     width: 40%;
     padding: 0;
 }
 
-nav ul li {
+.gnav ul li {
     font-size: 16px;
     border-bottom: 1px solid var(--brand-2);
     width: 100%;
 }
 
-nav ul li a {
+.gnav ul li a {
     padding: 25px 0;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-nav ul li:nth-child(-n+8)::after,
-nav ul li:nth-child(-n+8) a:hover::after {
+.gnav ul li:nth-child(-n+8)::after,
+.gnav ul li:nth-child(-n+8) a:hover::after {
     display: none;
 }
 
-nav ul li:nth-child(n+9) a {
+.gnav ul li:nth-child(n+9) a {
     padding: 25px;
 }
 
-nav ul li a br {
+.gnav ul li a br {
     display: none;
 }
 
-nav ul li {
+.gnav ul li {
     list-style: none;
 }
 
-nav a {
+.gnav a {
     color: var(--brand-1);
     text-decoration: none;
     font-weight: 600;
@@ -169,7 +169,7 @@ nav a {
     align-items: center
 }
 
-nav a i {
+.gnav a i {
     font-size: 14px;
     color: var(--brand-2);
 }
@@ -655,6 +655,39 @@ nav a i {
     border-radius: var(--radius)
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    border-right: 1px solid #fff;
+    padding-right: 24px;
+}
+
+.footer-nav li:last-child {
+    border: none;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-nav a:hover {
+    opacity: 0.6;
+}
+
+.copy {
+    margin: 0;
+}
+
 /*footer*/
 footer {
     background: var(--brand-1);
@@ -751,5 +784,14 @@ p.copy {
     #contact h2 {
         background-position: left 12% top;
         background-size: 15%;
+    }
+
+    .footer-nav li {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .footer-nav a {
+        text-decoration: underline;
     }
 }
