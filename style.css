@@ -113,7 +113,7 @@ img {
 }
 
 #hero .copy {
-    margin: 12% 0 0 5%;
+    margin: 15% 0 0 5%;
 }
 
 #hero .copy p {
@@ -816,14 +816,8 @@ Responsive
 }
 
 .price-card a {
-    display: inline-block;
     margin-top: 12px;
-    padding: 10px 16px;
-    border-radius: 10px;
     border: none;
-    background: var(--brand-1);
-    color: #fff;
-    text-decoration: none;
     transition: .35s;
 }
 

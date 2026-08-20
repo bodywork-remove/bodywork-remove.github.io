@@ -308,6 +308,36 @@ nav a i {
     transform: rotate(180deg);
 }
 
+/*予約ボタン*/
+.section-reservation {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.reservation-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    padding: 16px 40px;
+    border-radius: var(--radius);
+    background: var(--brand-1);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    transition: .35s;
+    gap: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.reservation-button:hover {
+    transform: translateY(-2px);
+}
+
 /* ==========================
    PC only
 ========================== */
@@ -576,6 +606,19 @@ nav a i {
     font-size: 20px;
 }
 
+.reserve {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 26px;
+    border-radius: var(--radius);
+    background: var(--brand-1);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
 .instagram {
     display: inline-flex;
     align-items: center;
@@ -666,6 +709,16 @@ p.copy {
         padding: 0;
     }
 
+    .section-reservation {
+        margin: 45px 0;
+    }
+
+    .reservation-button {
+        width: calc(100% - 40px);
+        max-width: 320px;
+        padding: 15px 30px;
+    }
+
     .shop-btn {
         width: 80vw;
     }
@@ -690,7 +743,6 @@ p.copy {
     .balm-content {
         text-align: center;
     }
-
 
     .support_cards {
         grid-template-columns: 1fr;
