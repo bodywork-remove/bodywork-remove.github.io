@@ -10,7 +10,7 @@ document.querySelectorAll('.card, .visual, .copy, .price-card, .qa-block, .profi
 /*ナビゲーション*/
 const menu = document.querySelector('.menu');
 const header = document.querySelector('header');
-const nav = document.querySelector('nav');
+const nav = document.querySelector('.gnav');
 
 /* ハンバーガーメニュー開閉 */
 menu.addEventListener('click', function () {
@@ -35,7 +35,7 @@ document.querySelectorAll('.submenu-btn').forEach(btn => {
 });
 
 /* リンククリックでメニューを閉じる */
-document.querySelectorAll('nav a').forEach(link => {
+document.querySelectorAll('.gnav a').forEach(link => {
 
     link.addEventListener('click', function () {
 
