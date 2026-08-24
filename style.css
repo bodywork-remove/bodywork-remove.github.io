@@ -132,7 +132,6 @@ Support
 
 #support {
     padding: 50px 0;
-    background: #fafcfb;
 }
 
 .support_card h3 {
@@ -338,7 +337,7 @@ Approach
 ==============================*/
 
 #approach {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .approach_wrap {
@@ -545,40 +544,91 @@ Approach
 }
 
 /* Access */
-.access-card {
+
+.access-content {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.access-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 24px;
+.access-heading {
+    margin-top: 32px;
+    margin-bottom: 10px;
 }
 
-.access-item:last-of-type {
+.access-heading span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--brand-1);
+}
+
+.access-heading h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.access-content>p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.access-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.access-note i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: var(--brand-1);
+}
+
+.access-note p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+.access-heading+p {
     margin-bottom: 0;
 }
 
-.access-item i {
-    font-size: 1.25rem;
-    color: var(--brand-1);
-    margin-top: 4px;
-    width: 24px;
-    text-align: center;
-}
+/* Smartphone */
 
-.access-item h3 {
-    margin: 0 0 4px;
-    font-size: 1rem;
-}
+@media (max-width: 767px) {
 
-.access-item p {
-    margin: 0;
-    line-height: 1.8;
-}
+    #access .container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 
+    .access-content {
+        width: 100%;
+    }
+
+    .access-heading span {
+        font-size: 0.65rem;
+    }
+
+    .access-heading h3 {
+        font-size: 1.25rem;
+    }
+
+    .access-content>p {
+        font-size: 0.9rem;
+        line-height: 1.9;
+    }
+}
 
 /*Profile*/
 #profile h3 {
@@ -667,6 +717,10 @@ Approach
         font-size: 24px;
     }
 
+    #support {
+        padding: 30px 0;
+    }
+
     .support_card h3 {
         font-size: 24px;
         margin: 0 0 15px 0;
@@ -736,13 +790,8 @@ Approach
         width: 90%;
     }
 
-    #access .container {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
     #approach {
-        padding: 70px 0;
+        padding: 30px 0;
     }
 
     .approach_cards {
