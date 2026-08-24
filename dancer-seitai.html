@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang='ja'>
 
@@ -42,67 +44,7 @@
 </head>
 
 <body class="dancer-page">
-    <header>
-        <a href="/"><img class="logo" src="images/remove.webp" alt="Re:move ロゴ" /></a>
-        <nav aria-label="グローバルナビゲーション" class="gnav">
-            <ul>
-                <li><a href="index.html#about"><i class="fas fa-thumbtack"></i>About</a></li>
-                <li class="has-submenu">
-
-                    <div class="submenu-toggle">
-
-                        <a href="index.html#support">
-                            <span>
-                                <i class="fas fa-hands-helping"></i>Support
-                            </span>
-                        </a>
-
-                        <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
-                            <i class="fas fa-chevron-down submenu-arrow"></i>
-                        </button>
-
-                    </div>
-
-                    <ul class="submenu">
-                        <li><a href="dance-support.html">ダンス上達サポート</a></li>
-                        <li><a href="seitai-pilates.html">整体×ピラティス</a></li>
-                    </ul>
-
-                </li>
-                <li><a href="index.html#examples"><i class="fas fa-chart-line"></i>Examples</a></li>
-                <li class="has-submenu">
-
-                    <div class="submenu-toggle">
-
-                        <a href="approach.html">
-                            <span>
-                                <i class="fas fa-hand-holding"></i>Approach
-                            </span>
-                        </a>
-
-                        <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
-                            <i class="fas fa-chevron-down submenu-arrow"></i>
-                        </button>
-
-                    </div>
-
-                    <ul class="submenu">
-                        <li><a href="dancer-seitai.html">ダンサー整体</a></li>
-                        <li><a href="tougou-work.html">反射の統合ワーク</a></li>
-                        <li><a href="pilates.html">ピラティス</a></li>
-                    </ul>
-
-                </li>
-                <li><a href="index.html#pricing"><i class="fas fa-donate"></i>pricing</a></li>
-                <li><a href="index.html#profile"><i class="far fa-address-card"></i>Profile</a></li>
-                <li><a href="#qa"><i class="far fa-question-circle"></i>Q&amp;A</a></li>
-                <li><a href="index.html#balm"><i class="fas fa-shopping-bag"></i>TheraMove Dance Balm</a></li>
-                <li><a href="index.html#access"><i class="fas fa-map-marker-alt"></i>Access</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
-            </ul>
-        </nav>
-        <div class="menu"></div>
-    </header>
+    {% include header.html %}
     <main>
         <section class="page-hero">
             <div class="container">
@@ -380,6 +322,190 @@
             </div>
         </section>
 
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="pricing-wrap">
+                <h2>Prices<br><span>目的に合わせて選べるメニュー</span></h2>
+
+                <p class="center-text">
+                    ダンサー整体の施術を含むメニューです。
+                </p>
+
+                <ul class="pricing-tab">
+                    <li class="select current">通常メニュー</li>
+                    <li class="select">回数券</li>
+                </ul>
+
+                <div class="pricing-type">
+                    <h3>おすすめメニュー</h3>
+                    <p>体を根本から変えていきたい方におすすめのメニューです。</p>
+
+                    <div class="pricing-grid main-pricing">
+                        <div class="price-card recommended featured-plan">
+                            <div class="badge-90">
+                                <i class="fas fa-crown"></i> おすすめ
+                            </div>
+                            <div class="lead-90">
+                                ダンスをされる方におすすめ
+                            </div>
+                            <h4>ダンス上達サポート　90分</h4>
+                            <div class="price-amount">
+                                ¥10,000<br>
+                                <span>（初回 ¥8,000）</span>
+                            </div>
+                            <p>
+                                ダンスのために、<br class="sp">体そのものを変えていきたい大人の方へ。<br>
+                                ダンサー整体、反射の統合ワーク、<br class="sp">療育整体などを<br class="sp">身体の状態に応じて組み合わせ、<br>
+                                整体とピラティスを通して<br class="sp">ダンスのための身体づくりをサポートします。<br>
+                                施術で整えた体を、<br class="sp">実際のダンスの動きにつなげていく<br class="sp">
+                                Re:moveの基本となる組み合わせです。
+                            </p>
+                            <a href="https://tayori.com/form/e3aa16c9400e55e40f7456476a9ab2463f9a878e/"
+                                class="btn-primary reserve" target="_blank">
+                                <i class="fas fa-calendar-check"></i>予約する
+                            </a>
+                        </div>
+
+                        <div class="price-card recommended featured-plan">
+                            <div class="badge-90">
+                                <i class="fas fa-crown"></i>おすすめ
+                            </div>
+                            <div class="lead-90">
+                                身体づくりにおすすめ
+                            </div>
+                            <h4>整体×ピラティス　90分</h4>
+                            <div class="price-amount">
+                                ¥10,000<br>
+                                <span>（初回 ¥8,000）</span>
+                            </div>
+                            <p>
+                                肩こりや腰痛などの不調を<br class="sp">繰り返さないために。<br>
+                                整体で身体を整え、<br class="sp">ピラティスで無理なく動ける<br class="sp">身体づくりを行います。<br>
+                                呼吸・姿勢・動きを整えながら、<br class="sp">日常生活や趣味を<br class="sp">もっと快適に楽しめる身体を目指す、<br>
+                                Re:moveのスタンダードセッションです。
+                            </p>
+                            <a href="https://tayori.com/form/e3aa16c9400e55e40f7456476a9ab2463f9a878e/"
+                                class="btn-primary reserve" target="_blank">
+                                <i class="fas fa-calendar-check"></i>予約する
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>単体メニュー</h3>
+                    <div class="pricing-grid grid3">
+                        <div class="price-card">
+                            <h4>ダンサー整体　60分</h4>
+                            <div class="price-amount">
+                                ¥8,000<br>
+                                <span>（初回 ¥6,000）</span>
+                            </div>
+                            <p>
+                                本番前後のメンテナンスや、<br>
+                                不調のケアを中心に受けたい方へ。<br>
+                                ソフトな施術で全身を整え、<br>
+                                動きやすい状態へ導きます。
+                            </p>
+                            <a href="https://tayori.com/form/e3aa16c9400e55e40f7456476a9ab2463f9a878e/"
+                                class="btn-primary reserve" target="_blank">
+                                <i class="fas fa-calendar-check"></i>予約する
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>特別プラン・短時間プラン</h3>
+                    <div class="pricing-grid grid3 main-pricing">
+                        <div class="price-card">
+                            <h4>120分プラン</h4>
+                            <p>ダンス上達サポート／整体×ピラティス共通</p>
+                            <div class="price-amount">¥16,000</div>
+
+                            <p>
+                                地方や海外在住など、<br>
+                                定期的に通うことが難しい方へ。<br>
+                                セルフワークを多めにお伝えします。<br>
+                                後日のZOOMサポート1回付きです。
+                            </p>
+
+                            <a href="https://tayori.com/form/e3aa16c9400e55e40f7456476a9ab2463f9a878e/"
+                                class="btn-primary reserve" target="_blank">
+                                <i class="fas fa-calendar-check"></i>予約する
+                            </a>
+                        </div>
+                        <div class="price-card">
+                            <h4>60分プラン</h4>
+                            <p>ダンス上達サポート／整体×ピラティス共通</p>
+                            <div class="price-amount">¥8,000</div>
+                            <p>
+                                時間やご予算の都合がある中で、<br>
+                                体を変えたい方へ。
+                            </p>
+
+                            <a href="https://tayori.com/form/e3aa16c9400e55e40f7456476a9ab2463f9a878e/"
+                                class="btn-primary reserve" target="_blank">
+                                <i class="fas fa-calendar-check"></i>予約する
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-type hide">
+                    <p class="center-text">
+                        回数券は、継続して体を整えたい方向けのご用意です。<br>
+                        無理におすすめすることはありません。
+                    </p>
+
+                    <div class="pricing-grid grid2">
+
+                        <div class="price-card">
+                            <h4>90分セッション（昼間）<br>5回券</h4>
+                            <div class="price-amount">¥45,000</div>
+                            <p><span>1回あたり9,000円</span></p>
+                            <p>
+                                平日10:00〜14:00のみ有効の<br>
+                                回数券です。<br>
+                                3ヶ月有効です。
+                            </p>
+                        </div>
+
+                        <div class="price-card">
+                            <h4>90分セッション（昼間）<br>3回券</h4>
+                            <div class="price-amount">¥28,500</div>
+                            <p><span>1回あたり9,500円</span></p>
+                            <p>
+                                平日10:00〜14:00のみ有効の<br>
+                                回数券です。<br>
+                                3ヶ月有効です。
+                            </p>
+                        </div>
+
+                        <div class="price-card">
+                            <h4>60分セッション（昼間）<br>5回券</h4>
+                            <div class="price-amount">¥35,000</div>
+                            <p><span>1回あたり7,000円</span></p>
+                            <p>
+                                平日10:00〜14:00のみ有効の<br>
+                                回数券です。<br>
+                                3ヶ月有効です。
+                            </p>
+                        </div>
+
+                        <div class="price-card">
+                            <h4>60分セッション（昼間）<br>3回券</h4>
+                            <div class="price-amount">¥22,500</div>
+                            <p><span>1回あたり7,500円</span></p>
+                            <p>
+                                平日10:00〜14:00のみ有効の<br>
+                                回数券です。<br>
+                                3ヶ月有効です。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact">
             <div class="contact_wrap">
@@ -416,19 +542,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        <nav aria-label="フッターナビゲーション">
-            <ul class="footer-nav">
-                <li><a href="index.html">TOP</a></li>
-                <li><a href="dance-support.html">ダンス上達サポート</a></li>
-                <li><a href="seitai-pilates.html">整体×ピラティス</a></li>
-                <li><a href="dancer-seitai.html">ダンサー整体</a></li>
-                <li><a href="tougou-work.html">反射の統合ワーク</a></li>
-                <li><a href="pilates.html">ピラティス</a></li>
-            </ul>
-        </nav>
-        <p class="copy">© Re:move｜踊りやすい身体をつくる整体×ピラティス</p>
-    </footer>
+    {% include footer.html %}
     <script src="script.js"></script>
 </body>
 

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -43,67 +45,7 @@
 </head>
 
 <body class="approach-page">
-  <header>
-    <a href="/"><img class="logo" src="images/remove.webp" alt="Re:move ロゴ" /></a>
-    <nav aria-label="グローバルナビゲーション" class="gnav">>
-      <ul>
-        <li><a href="index.html#about"><i class="fas fa-thumbtack"></i>About</a></li>
-        <li class="has-submenu">
-
-          <div class="submenu-toggle">
-
-            <a href="index.html#support">
-              <span>
-                <i class="fas fa-hands-helping"></i>Support
-              </span>
-            </a>
-
-            <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
-              <i class="fas fa-chevron-down submenu-arrow"></i>
-            </button>
-
-          </div>
-
-          <ul class="submenu">
-            <li><a href="dance-support.html">ダンス上達サポート</a></li>
-            <li><a href="seitai-pilates.html">整体×ピラティス</a></li>
-          </ul>
-
-        </li>
-        <li><a href="index.html#examples"><i class="fas fa-chart-line"></i>Examples</a></li>
-        <li class="has-submenu">
-
-          <div class="submenu-toggle">
-
-            <a href="approach.html">
-              <span>
-                <i class="fas fa-hand-holding"></i>Approach
-              </span>
-            </a>
-
-            <button class="submenu-btn" type="button" aria-label="サブメニューを開く">
-              <i class="fas fa-chevron-down submenu-arrow"></i>
-            </button>
-
-          </div>
-
-          <ul class="submenu">
-            <li><a href="dancer-seitai.html">ダンサー整体</a></li>
-            <li><a href="tougou-work.html">反射の統合ワーク</a></li>
-            <li><a href="pilates.html">ピラティス</a></li>
-          </ul>
-
-        </li>
-        <li><a href="index.html#pricing"><i class="fas fa-donate"></i>pricing</a></li>
-        <li><a href="index.html#profile"><i class="far fa-address-card"></i>Profile</a></li>
-        <li><a href="#qa"><i class="far fa-question-circle"></i>Q&amp;A</a></li>
-        <li><a href="index.html#balm"><i class="fas fa-shopping-bag"></i>TheraMove Dance Balm</a></li>
-        <li><a href="index.html#access"><i class="fas fa-map-marker-alt"></i>Access</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
-      </ul>
-    </nav>
-    <div class="menu"></div>
-  </header>
+  {% include header.html %}
   <main>
     <section class="page-hero has-image">
       <div class="container">
@@ -424,19 +366,7 @@
       </div>
     </section>
   </main>
-  <footer>
-    <nav aria-label="フッターナビゲーション">
-      <ul class="footer-nav">
-        <li><a href="index.html">TOP</a></li>
-        <li><a href="dance-support.html">ダンス上達サポート</a></li>
-        <li><a href="seitai-pilates.html">整体×ピラティス</a></li>
-        <li><a href="dancer-seitai.html">ダンサー整体</a></li>
-        <li><a href="tougou-work.html">反射の統合ワーク</a></li>
-        <li><a href="pilates.html">ピラティス</a></li>
-      </ul>
-    </nav>
-    <p class="copy">© Re:move｜踊りやすい身体をつくる整体×ピラティス</p>
-  </footer>
+  {% include footer.html %}
   <script src="script.js"></script>
 </body>
 
