@@ -236,22 +236,27 @@
 }
 
 /* ---------- こんな方へ ---------- */
-
 .check-list {
     list-style: none;
-    padding: 0;
-    margin: 2rem auto 0;
-    max-width: 700px;
+    padding: 1.5rem 2rem;
+    margin: 2.5rem auto 0;
+    max-width: 760px;
+
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 1.2rem;
+
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
 }
 
 .check-list li {
-    position: relative;
-    padding: 1rem 1rem 1rem 3rem;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .check-list li::before {
@@ -259,14 +264,112 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    flex: 0 0 1.15rem;
+    width: 1.15rem;
 
     color: var(--brand-1);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+    .check-list {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 0.25rem;
+        row-gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .check-list li {
+        gap: 0.4rem;
+        padding: 0.55rem 0;
+        width: calc(100% + 1.5rem);
+        transform: translateX(-1.5rem);
+    }
+
+    .check-list li::before {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* ==========================
+   Balm
+========================== */
+
+.balm-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.balm-image img {
+    width: 100%;
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.balm-subtitle {
+    color: var(--brand-2);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#balm h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#balm h2 span {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.balm-copy {
+    font-size: 22px;
+    color: var(--brand-1);
+    font-weight: 600;
+}
+
+.balm-content p {
+    line-height: 1.9;
+}
+
+.balm-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    background: var(--brand-1);
+    color: #fff;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.balm-btn:hover {
+    background: var(--brand-2);
+    color: var(--brand-1);
+}
+
 
 /* ==========================
    My Story
@@ -783,7 +886,7 @@
     .section-title h2,
     .guide-heading h2,
     .service-group h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .page-hero {
@@ -825,9 +928,21 @@
     }
 
     .check-list li {
-        padding: .9rem .9rem .9rem 2.8rem;
+        padding: .5rem .8rem .1rem 2.8rem;
     }
 
+    .balm-wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #balm h2 {
+        text-align: center;
+    }
+
+    .balm-content {
+        text-align: center;
+    }
 
     .story-section {
 

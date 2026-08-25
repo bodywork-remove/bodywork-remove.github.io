@@ -491,83 +491,6 @@ header img.logo {
     box-shadow: 0 8px 18px rgba(20, 30, 20, 0.06);
 }
 
-
-/* ==========================
-   Balm
-========================== */
-
-.balm-wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-
-    align-items: center;
-}
-
-.balm-image img {
-    width: 100%;
-    border-radius: var(--radius);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, .08);
-}
-
-.balm-subtitle {
-    color: var(--brand-2);
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-#balm h2 {
-    text-align: left;
-    margin-bottom: 24px;
-}
-
-#balm h2 span {
-    display: block;
-    margin-top: 8px;
-    font-size: 15px;
-}
-
-.balm-copy {
-    font-size: 22px;
-    color: var(--brand-1);
-    font-weight: 600;
-}
-
-.balm-content p {
-    line-height: 1.9;
-}
-
-.balm-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-
-    margin-top: 20px;
-    padding: 14px 24px;
-
-    border-radius: 12px;
-
-    background: var(--brand-1);
-    color: #fff;
-
-    text-decoration: none;
-    font-weight: 700;
-
-    transition: .3s;
-}
-
-.balm-btn:hover {
-    background: var(--brand-2);
-    color: var(--brand-1);
-}
-
 /*Contact*/
 #contact {
     padding: 50px 24px;
@@ -791,19 +714,6 @@ footer p {
 
     p.copy {
         font-size: 12px;
-    }
-
-    .balm-wrap {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    #balm h2 {
-        text-align: center;
-    }
-
-    .balm-content {
-        text-align: center;
     }
 
     .support_cards {
