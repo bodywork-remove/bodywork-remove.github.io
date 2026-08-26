@@ -69,25 +69,22 @@ img {
 }
 
 /* Hero */
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--brand-1);
-    border: none;
-    background: rgba(255, 255, 255, 0.6);
-}
-
-#hero .swiper-slide img {
-    width: 100% !important;
-}
-
 .hero_wrap {
     max-width: 1120px;
+    aspect-ratio: 1120 / 630;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(30, 40, 30, 0.06);
     overflow: hidden;
     padding: 0;
     position: relative;
+    background-image: url("images/main_dancer.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_wrap.general {
+    background-image: url("images/main_general.webp");
 }
 
 .hero {
@@ -107,7 +104,7 @@ img {
 #hero .copy p {
     color: #fff;
     margin: 14px 0 24px;
-    line-height: 1.7
+    line-height: 1.7;
 }
 
 #hero .copy p.lead {
@@ -691,22 +688,23 @@ Approach
 }
 
 @media (max-width:767px) {
-    #hero {
-        grid-template-columns: 1fr;
-        height: 160vw;
-        margin: 0;
-        border-radius: 0;
-        position: relative;
-    }
-
     .hero_wrap {
-        position: static;
+        width: 100%;
+        aspect-ratio: 3.5 / 5;
+        border-radius: 15px;
+        background-position: right 42% center;
     }
 
-    .hero {
-        padding: 49vw 0;
-        display: flex;
-        justify-content: center;
+    .hero_wrap.general {
+        background-position: right 55% center;
+    }
+
+    #hero .copy {
+        margin: 10% 5% 0;
+    }
+
+    #hero .copy p {
+        margin: 32px 0 24px;
     }
 
     #hero .copy p.lead {
@@ -714,7 +712,7 @@ Approach
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     #support {

@@ -65,16 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const heroTitle = document.getElementById('hero-title');
             const heroDescription = document.getElementById('hero-description');
+            const heroWrap = document.querySelector('.hero_wrap');
 
             if (!heroTitle || !heroDescription) return;
 
             heroTitle.innerHTML =
-                '整体×ピラティスで<br>動きやすい身体をつくる';
+                '整体×ピラティスで<br>動きやすい<br class="sp">身体をつくる';
 
             heroDescription.innerHTML =
                 'ダンスのパフォーマンスアップから<br class="sp">日常生活の身体づくりまで。<br>' +
-                '姿勢・動作・感覚・発達など<br class="sp">多角的な視点を取り入れ、<br>' +
+                '姿勢・動作・感覚・発達など<br class="sp">多角的な視点で、<br>' +
                 '一人ひとりに合わせた身体づくりを<br class="sp">サポートします。';
+
+            heroWrap.classList.add('general');
         }
     }
 
