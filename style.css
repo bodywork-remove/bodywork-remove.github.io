@@ -126,26 +126,48 @@ img {
 /*==============================
 Support
 ==============================*/
-
 #support {
     padding: 50px 0;
 }
 
+.support_wrap {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+.support_cards {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+}
+
+.support_card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(53, 82, 74, .08);
+    transition: .35s;
+    display: flex;
+    flex-direction: column;
+}
+
+.support_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
+    border-color: var(--brand-2);
+}
+
 .support_card h3 {
-
     color: var(--brand-1);
-
     font-size: 28px;
-
     margin-bottom: 18px;
 }
 
 .support_card p {
-
     line-height: 2;
-
     color: var(--gray);
-
     flex: 1;
 }
 
@@ -153,6 +175,27 @@ Support
     margin: 0;
 }
 
+/* メイン */
+.support_card_main h3 {
+    font-size: 30px;
+}
+
+/* メンテナンス側 */
+.support_maintenance {
+    display: flex;
+    flex-direction: column;
+}
+
+.support_maintenance_lead {
+    margin: 0 0 12px;
+    color: var(--brand-1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.support_card_sub {
+    flex: 1;
+}
 
 /*==============================
 ラベル
@@ -719,6 +762,10 @@ Approach
         padding: 30px 0;
     }
 
+    .support_cards {
+        grid-template-columns: 1fr;
+    }
+
     .support_card h3 {
         font-size: 24px;
         margin: 0 0 15px 0;
@@ -726,6 +773,19 @@ Approach
 
     .support_card .button {
         margin-top: 15px;
+    }
+
+    .support_maintenance {
+        margin-top: 35px;
+    }
+
+    .support_maintenance_lead {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .support_card_main h3 {
+        font-size: 26px;
     }
 
     .services {

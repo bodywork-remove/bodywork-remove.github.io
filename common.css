@@ -353,38 +353,6 @@ header img.logo {
 
 }
 
-/*カード*/
-.support_wrap {
-    width: min(1100px, 90%);
-    margin: auto;
-}
-
-.support_cards {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-.support_card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 35px;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid rgba(53, 82, 74, .08);
-    transition: .35s;
-    display: flex;
-    flex-direction: column;
-}
-
-.support_card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
-    border-color: var(--brand-2);
-}
-
 .menu-category {
     display: inline-block;
     align-self: flex-start;
