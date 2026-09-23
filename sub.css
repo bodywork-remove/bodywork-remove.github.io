@@ -769,14 +769,9 @@
             #f2f8f5 60%,
             #ffffff 100%);
     border: 2px solid var(--brand-1);
-    box-shadow:
-        0 25px 20px rgba(53, 82, 74, 0.18),
-        0 8px 20px rgba(53, 82, 74, 0.12);
-    transform: translateY(-8px);
     z-index: 1;
     overflow: visible;
     position: relative;
-    transform: translateY(-8px);
     z-index: 1;
 }
 
@@ -831,7 +826,7 @@
 
 .lead-90 {
     display: inline-block;
-    margin-bottom: 10px;
+    margin: 10 0px;
     padding: 4px 12px;
     font-size: 13px;
     font-weight: 700;
@@ -856,6 +851,10 @@
     color: var(--brand-1);
     font-size: 18px;
     font-weight: bold;
+}
+
+.price-card span.notes {
+    font-size: 14px;
 }
 
 .price-card a {
@@ -994,15 +993,15 @@
         padding: 1.8rem;
     }
 
+    .price-card p {
+        text-align: left;
+    }
+
     .pricing-grid {
         grid-template-columns: 1fr !important;
     }
 
     .pricing-tab li {
         font-size: 20px;
-    }
-
-    .recommended {
-        transform: none;
     }
 }
