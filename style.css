@@ -643,6 +643,12 @@ Approach
     margin-bottom: 0;
 }
 
+.gmap-iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
 /* Smartphone */
 
 @media (max-width: 767px) {
