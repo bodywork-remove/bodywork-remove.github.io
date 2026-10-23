@@ -139,6 +139,7 @@ Support
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-top: 20px;
 }
 
 .support_card {
@@ -274,100 +275,36 @@ Support
 /* ==========================
    Examples
 ========================== */
-
-.examples_wrap {
-    max-width: 1100px;
-    margin: 0 auto;
+.examples-container {
+    width: min(1080px, calc(100% - 40px));
+    margin-inline: auto;
 }
 
-.examples-lead {
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.examples-swiper {
-    position: relative;
-    overflow: visible;
-}
-
-#examples {
-    overflow: hidden;
-    /* はみ出した分だけ隠す */
-}
-
-.example-card {
-    background: #fff;
-    border-radius: var(--radius);
-    padding: 32px;
-    box-shadow: 0 8px 18px rgba(20, 30, 20, .04);
-    height: 100%;
-}
-
-.examples-swiper .swiper-wrapper {
-    align-items: stretch;
-}
-
-.examples-swiper .swiper-slide {
-    height: auto;
-}
-
-.example-card {
-    display: flex;
-    flex-direction: column;
+.examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 28px;
 }
 
 .example-image {
-    display: block;
-    width: 50%;
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 12px;
+    min-height: 170px;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.example-card {
+    padding: 20px 10px 0 10px;
 }
 
 .example-caption {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 15px;
-    line-height: 1.8;
-    color: var(--muted);
-    font-weight: 600;
+    padding: 20px 10px;
 }
 
-/* navigation */
-
-.examples-prev,
-.examples-next {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    z-index: 10;
-
-    width: 52px;
-    height: 52px;
-
-    border-radius: 50%;
-    background: rgba(255, 255, 255, .9);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
-
-    cursor: pointer;
-}
-
-.examples-prev {
-    left: -20px;
-}
-
-.examples-next {
-    right: -20px;
-}
-
-.examples-prev i,
-.examples-next i {
-    color: var(--brand-1);
+.example-image img {
+    display: block;
+    object-fit: cover;
 }
 
 /*==============================
@@ -649,6 +586,11 @@ Approach
     height: auto;
 }
 
+.access-content .reserve,
+.access-content .line {
+    margin-top: 20px;
+}
+
 /* Smartphone */
 
 @media (max-width: 767px) {
@@ -832,26 +774,12 @@ Approach
         padding: 100px 20px 80px 20px;
     }
 
-    #examples {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .example-card {
-        padding: 12px;
-    }
-
-    .example-caption {
-        text-align: left;
-    }
-
-    .examples-prev,
-    .examples-next {
-        top: 30%;
+    .examples {
+        grid-template-columns: 1fr;
     }
 
     .example-image {
-        width: 90%;
+        min-height: 150px;
     }
 
     #approach {
